@@ -1,9 +1,19 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwindcss/plugin');
 export default {
-  content: [],
+  content: ["./ressources/**/*.html", "./index.html", "./assets/**/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'display':['Oswald', 'sans-serif']
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addVariant }) {
+      addVariant('children', '&>*')
+    })
+  ],
 }
 
