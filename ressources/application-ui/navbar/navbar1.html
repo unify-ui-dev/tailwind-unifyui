@@ -8,7 +8,7 @@
     <title>Navbar Example</title>
     <meta name="description" content="Grocery Store Website">
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <style>
         body {
@@ -26,13 +26,13 @@
     </style>
 </head>
 
-<body class="overflow-hidden overflow-y-auto bg-white dark:bg-gray-950">
+<body class="overflow-hidden overflow-y-auto lg:overflow-y-auto bg-white dark:bg-gray-950">
 
     <!-- navbar -->
-    <div data-nav-overlay-variant2 aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
+    <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
     <header class="fixed left-0 top-0 w-full flex items-center h-20 border-b border-b-gray-100 dark:border-b-gray-900 z-40 bg-white dark:bg-gray-950 bg-opacity-80 backdrop-filter backdrop-blur-xl">
         <nav
-            class="relative mx-auto max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex gap-x-5 justify-between items-center">
+            class="relative mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex gap-x-5 justify-between items-center">
             <div class="flex items-center min-w-max">
                 <a href="#" class="text-xl font-semibold flex items-center gap-x-2">
                     <span class="flex">
@@ -43,8 +43,8 @@
                 </a>
             </div>
 
-            <div data-navbar-variant2
-                class=" fixed top-full translate-y-10 skew-x-6 opacity-0 invisible lg:visible lg:skew-x-0 lg:translate-y-0 lg:opacity-100 left-0 bg-white dark:bg-gray-950 lg:bg-transparent border-b border-gray-200 dark:border-gray-800 py-8 lg:py-0 px-5 sm:px-10 md:px-12 lg:px-0 lg:border-none w-full lg:top-0 lg:relative  lg:flex lg:justify-between duration-300 ease-linear">
+            <div data-navbar
+                class=" absolute top-full translate-y-10 opacity-0 invisible lg:visible  lg:translate-y-0 lg:opacity-100 left-0 bg-white dark:bg-gray-950 lg:bg-transparent border-b border-gray-200 dark:border-gray-800 py-8 lg:py-0 px-5 sm:px-10 md:px-12 lg:px-0 lg:border-none w-full lg:top-0 lg:relative  lg:flex lg:justify-between duration-300 ease-linear">
                 <ul class="flex flex-col lg:flex-row gap-6 lg:items-center text-gray-700 dark:text-gray-300 lg:w-full lg:justify-center">
                     <li class="">
                         <a href="#"
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div aria-hidden="true" class="flex items-center lg:hidden">
-                <button data-toggle-navbar-variant2 data-is-open="false"
+                <button data-toggle-navbar data-is-open="false"
                     class="outline-none border-l border-l-sky-100 dark:border-l-gray-800 pl-3 relative py-3">
                     <span class="sr-only">Toggle navbar</span>
                     <div id="line-1" aria-hidden="true" class="h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-200 transition duration-300">
@@ -113,7 +113,6 @@
                 navbar.classList.toggle("invisible")
                 navbar.classList.toggle("opacity-0")
                 navbar.classList.toggle("translate-y-10")
-                navbar.classList.toggle("skew-x-6")
                 toggleBtnAttr()
             })
 
@@ -121,7 +120,6 @@
                 navbar.classList.add("invisible")
                 navbar.classList.add("opacity-0")
                 navbar.classList.add("translate-y-10")
-                navbar.classList.add("skew-x-6")
                 toggleBtnAttr()
             })
         }

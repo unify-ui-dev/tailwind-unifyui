@@ -26,11 +26,11 @@
     </style>
 </head>
 
-<body class="overflow-hidden overflow-y-auto bg-white dark:bg-gray-950">
+<body class="overflow-hidden overflow-y-auto lg:overflow-y-auto bg-white dark:bg-gray-950">
 
     <!-- navbar -->
-    <div data-nav-overlay-variant2 aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
-    <div class="mx-auto max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5">
+    <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
+    <div class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5">
         <div class="w-full flex justify-between h-14 items-center">
             <div class="h-full flex items-center gap-x-4 text-gray-700 dark:text-gray-300">
                 <a href="tel:" class="flex gap-1 text-sm">
@@ -42,15 +42,17 @@
                     </svg>
                     <span class="hidden sm:flex">+243 97 24 44 966</span>
                 </a>
-                <a href="mailto:" class="flex items-center min-w-max">
+                <a href="mailto:" class="flex gap-1 items-center">
                     <span>
-
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path fill-rule="evenodd" d="M2.106 6.447A2 2 0 001 8.237V16a2 2 0 002 2h14a2 2 0 002-2V8.236a2 2 0 00-1.106-1.789l-7-3.5a2 2 0 00-1.788 0l-7 3.5zm1.48 4.007a.75.75 0 00-.671 1.342l5.855 2.928a2.75 2.75 0 002.46 0l5.852-2.926a.75.75 0 10-.67-1.342l-5.853 2.926a1.25 1.25 0 01-1.118 0l-5.856-2.928z" clip-rule="evenodd" />
+                        </svg>                                                    
                     </span>
                     <span class="hidden sm:flex">johndoe@info.com</span>
                 </a>
             </div>
-            <div class="flex items-center gap-x-4 -mx-2 text-gray-700 dark:text-gray-300">
-                <a href="#facebook" class="transition ease-linear hover:text-pink-700 p-2">
+            <div class="flex items-center gap-x-2.5 -mx-2 text-gray-700 dark:text-gray-300 children:p-2 children:border children:border-x-gray-200 dark:children:border-gray-800 children:bg-gray-100 dark:children:bg-gray-900 children:rounded-md">
+                <a href="#facebook" class="transition ease-linear hover:text-pink-700">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-facebook" viewBox="0 0 16 16">
                         <path
@@ -58,7 +60,7 @@
                     </svg>
                 </a>
 
-                <a href="#twitter" class="transition ease-linear hover:text-pink-700 p-2">
+                <a href="#twitter" class="transition ease-linear hover:text-pink-700">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-twitter" viewBox="0 0 16 16">
                         <path
@@ -66,7 +68,7 @@
                     </svg>
                 </a>
 
-                <a href="#linkedin" class="transition ease-linear hover:text-pink-700 p-2">
+                <a href="#linkedin" class="transition ease-linear hover:text-pink-700">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-linkedin" viewBox="0 0 16 16">
                         <path
@@ -74,7 +76,7 @@
                     </svg>
                 </a>
 
-                <a href="#instagram" class="transition ease-linear hover:text-pink-700 p-2">
+                <a href="#instagram" class="transition ease-linear hover:text-pink-700">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-instagram" viewBox="0 0 16 16">
                         <path
@@ -87,7 +89,7 @@
     <header
         class="sticky left-0 top-0 w-full flex items-center h-20 border-b border-b-gray-100 dark:border-b-gray-900 z-40 bg-white dark:bg-gray-950 bg-opacity-80 backdrop-filter backdrop-blur-xl">
         <nav
-            class="relative mx-auto max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex gap-x-5 justify-between items-center">
+            class="relative mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex gap-x-5 justify-between items-center">
             <div class="flex items-center min-w-max">
                 <a href="#" class="text-xl font-semibold flex items-center gap-x-2">
                     <span class="flex">
@@ -98,8 +100,8 @@
                 </a>
             </div>
 
-            <div data-navbar-variant2
-                class=" fixed top-full translate-y-10 skew-x-6 opacity-0 invisible lg:visible lg:skew-x-0 lg:translate-y-0 lg:opacity-100 left-0 bg-white dark:bg-gray-950 lg:bg-transparent border-b border-gray-200 dark:border-gray-800 py-8 lg:py-0 px-5 sm:px-10 md:px-12 lg:px-0 lg:border-none w-full lg:top-0 lg:relative  lg:flex lg:justify-between duration-300 ease-linear">
+            <div data-navbar
+                class=" absolute top-full translate-y-10 opacity-0 invisible lg:visible  lg:translate-y-0 lg:opacity-100 left-0 bg-white dark:bg-gray-950 lg:bg-transparent border-b border-gray-200 dark:border-gray-800 py-8 lg:py-0 px-5 sm:px-10 md:px-12 lg:px-0 lg:border-none w-full lg:top-0 lg:relative  lg:flex lg:justify-between duration-300 ease-linear">
                 <ul
                     class="flex flex-col lg:flex-row gap-6 lg:items-center text-gray-700 dark:text-gray-300 lg:w-full lg:justify-center">
                     <li class="">
@@ -131,7 +133,7 @@
                 </div>
             </div>
             <div aria-hidden="true" class="flex items-center lg:hidden">
-                <button data-toggle-navbar-variant2 data-is-open="false"
+                <button data-toggle-navbar data-is-open="false"
                     class="outline-none border-l border-l-pink-100 dark:border-l-gray-800 pl-3 relative py-3">
                     <span class="sr-only">Toggle navbar</span>
                     <div id="line-1" aria-hidden="true"
@@ -167,7 +169,6 @@
                 navbar.classList.toggle("invisible")
                 navbar.classList.toggle("opacity-0")
                 navbar.classList.toggle("translate-y-10")
-                navbar.classList.toggle("skew-x-6")
                 toggleBtnAttr()
             })
 
@@ -175,7 +176,6 @@
                 navbar.classList.add("invisible")
                 navbar.classList.add("opacity-0")
                 navbar.classList.add("translate-y-10")
-                navbar.classList.add("skew-x-6")
                 toggleBtnAttr()
             })
         }
