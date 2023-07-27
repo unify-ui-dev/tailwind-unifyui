@@ -25,16 +25,16 @@
     </style>
 </head>
 
-<body class="overflow-hidden overflow-y-auto bg-white dark:bg-gray-950">
+<body class="overflow-hidden overflow-y-auto lg:overflow-y-auto bg-white dark:bg-gray-950">
 
     <!-- navbar -->
     <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
     <header class="sticky left-0 top-0 w-full flex items-center h-20 bg-white border-b border-b-gray-200 dark:bg-gray-950 dark:border-b-gray-800 z-40">
-        <nav class="relative mx-auto max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex gap-x-5 justify-between items-center">
+        <nav class="relative mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex gap-x-5 justify-between items-center">
             <div aria-hidden="true" class="w-full flex items-center lg:hidden">
                 <button data-toggle-navbar data-is-open="false" class="outline-none border-r border-r-gray-200 dark:border-r-gray-800 pr-3 relative py-3">
                     <span class="sr-only">Toggle navbar</span>
-                    <div id="line-1" aria-hidden="true" class="h-0.5 w-6 rounded bg-gray- dark:bg-gray-200 transition duration-300"></div>
+                    <div id="line-1" aria-hidden="true" class="h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-200 transition duration-300"></div>
                     <div id="line-2" aria-hidden="true" class="mt-2 h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-200 transition duration-300"></div>
                 </button>
             </div>
@@ -100,7 +100,7 @@
 
     <!-- hero section -->
     <section class="py-8 ">
-        <div class="mx-auto max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5">
+        <div class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5">
             <div class="mx-auto text-center max-w-xl">
                 <h1 class="relative font-semibold max-w-max mx-auto pb-2 font-display text-3xl sm:text-4xl md:text-5xl text-gray-800 dark:text-white after:absolute
                 after:bottom-0 after:left-0 after:h-0.5 after:rounded-lg after:bg-gray-800 dark:after:bg-gray-100 after:w-4">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 <div class="order-2 md:order-2 lg:order-2 flex justify-center">
-                    <div class="w-max relative">
+                    <div class="max-w-full relative">
                         <span class="absolute inset-x-0 top-16 bottom-0 rounded-lg scale-[1.04]  bg-gradient-to-b from-gray-200 dark:from-gray-900"></span>
                         <span class="absolute inset-x-0 bottom-0 top-16 rounded-lg bg-gray-100 dark:bg-gray-900"></span>
                         <img src="/images/dev-with-c.webp" width="2650" alt="prettywoman" class="relative w-full h-auto max-h-96 lg:max-h-[26rem]">
@@ -188,7 +188,7 @@
         </div>
     </section>
 
-    <script type="module" src="./../../main.js"></script>
+    <script type="module" src="./../../../main.js"></script>
     <script>
         const btnHumb = document.querySelector("[data-toggle-navbar]")
         const navbar = document.querySelector("[data-navbar]")

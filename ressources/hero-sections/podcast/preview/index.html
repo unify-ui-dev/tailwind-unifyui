@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/unify.css">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -26,13 +27,12 @@
     </style>
 </head>
 
-<body class="overflow-hidden overflow-y-auto bg-white dark:bg-gray-950">
-
+<body class="overflow-hidden overflow-y-auto lg:overflow-y-auto bg-white dark:bg-gray-950">
     <!-- navbar -->
-    <div data-nav-overlay-variant2 aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
+    <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
     <header class="fixed left-0 top-0 w-full flex items-center h-20 border-b border-b-gray-100 dark:border-b-gray-900 z-40 bg-white dark:bg-gray-950 bg-opacity-80 backdrop-filter backdrop-blur-xl">
         <nav
-            class="relative mx-auto max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex gap-x-5 justify-between items-center">
+            class="relative mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex gap-x-5 justify-between items-center">
             <div class="flex items-center min-w-max">
                 <a href="#" class="text-xl font-semibold flex items-center gap-x-2">
                     <span class="flex">
@@ -43,8 +43,8 @@
                 </a>
             </div>
 
-            <div data-navbar-variant2
-                class=" fixed top-full translate-y-10 skew-x-6 opacity-0 invisible lg:visible lg:skew-x-0 lg:translate-y-0 lg:opacity-100 left-0 bg-white dark:bg-gray-950 lg:bg-transparent border-b border-gray-200 dark:border-gray-800 py-8 lg:py-0 px-5 sm:px-10 md:px-12 lg:px-0 lg:border-none w-full lg:top-0 lg:relative  lg:flex lg:justify-between duration-300 ease-linear">
+            <div data-navbar
+                class=" absolute top-full translate-y-10 opacity-0 invisible lg:visible  lg:translate-y-0 lg:opacity-100 left-0 bg-white dark:bg-gray-950 lg:bg-transparent border-b border-gray-200 dark:border-gray-800 py-8 lg:py-0 px-5 sm:px-10 md:px-12 lg:px-0 lg:border-none w-full lg:top-0 lg:relative  lg:flex lg:justify-between duration-300 ease-linear">
                 <ul class="flex flex-col lg:flex-row gap-6 lg:items-center text-gray-700 dark:text-gray-300 lg:w-full lg:justify-center">
                     <li class="">
                         <a href="#"
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div aria-hidden="true" class="flex items-center lg:hidden">
-                <button data-toggle-navbar-variant2 data-is-open="false"
+                <button data-toggle-navbar data-is-open="false"
                     class="outline-none border-l border-l-sky-100 dark:border-l-gray-800 pl-3 relative py-3">
                     <span class="sr-only">Toggle navbar</span>
                     <div id="line-1" aria-hidden="true" class="h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-200 transition duration-300">
@@ -95,9 +95,9 @@
     <!-- hero section -->
     <section class="py-8 mt-24">
         <div
-            class="mx-auto max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row lg:items-stretch gap-10">
+            class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row lg:items-stretch gap-10">
             <div class="lg:w-1/2 lg:py-10 xl:py-12 text-center lg:text-left max-w-2xl md:max-w-3xl mx-auto ">
-                <h1 class="font-semibold leading-tight text-teal-950 dark:text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                <h1 class="font-semibold leading-tight text-teal-950 dark:text-white text-4xl md:text-5xl lg:text-6xl">
                     Find and listen in your favorite <div
                         class="relative after:absolute after:inset-x-0 after:h-3 after:bg-sky-100 dark:after:bg-sky-950 after:bottom-2 inline-block px-2">
                         <span class="relative z-10 text-transparent bg-clip-text bg-gradient-to-tr from-sky-800 to-teal-400">Podcasts</span></div>!
@@ -151,40 +151,7 @@
         </div>
     </section>
 
-    <script type="module" src="./../../main.js"></script>
-    <script>
-        const btnHumb = document.querySelector("[data-toggle-navbar]")
-        const navbar = document.querySelector("[data-navbar]")
-        const overlay = document.querySelector("[data-nav-overlay]")
-        if (btnHumb && navbar) {
-            const toggleBtnAttr = () => {
-                const isOpen = btnHumb.getAttribute("data-is-open")
-                btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
-                if (isOpen === "false") {
-                    document.body.classList.toggle("overflow-y-auto")
-                    overlay.classList.toggle("hidden")
-                } else {
-                    document.body.classList.add("overflow-y-auto")
-                    overlay.classList.add("hidden")
-                }
-            }
-            btnHumb.addEventListener("click", () => {
-                navbar.classList.toggle("invisible")
-                navbar.classList.toggle("opacity-0")
-                navbar.classList.toggle("translate-y-10")
-                navbar.classList.toggle("skew-x-6")
-                toggleBtnAttr()
-            })
-
-            overlay.addEventListener("click", () => {
-                navbar.classList.add("invisible")
-                navbar.classList.add("opacity-0")
-                navbar.classList.add("translate-y-10")
-                navbar.classList.add("skew-x-6")
-                toggleBtnAttr()
-            })
-        }
-    </script>
+    <script" src="js/unify.js"></script>
 </body>
 
 </html>
