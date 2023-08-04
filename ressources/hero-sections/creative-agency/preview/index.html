@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital-agency Hero</title>
+    <meta name="description" content="digital-agency hero-section">
+    <link rel="stylesheet" href="css/unify.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: "DM Sans", sans-serif;
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-1 {
+            transform: translateY(0.375rem) rotate(40deg);
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-2 {
+            transform: scaleX(0);
+            opacity: 0;
+            /* scale-x-0 opacity-0 */
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-3 {
+            transform: translateY(-0.375rem) rotate(-40deg);
+        }
+    </style>
+</head>
+
+<body class="overflow-hidden overflow-y-auto lg:overflow-y-auto bg-white dark:bg-gray-950">
+    <!-- navbar -->
+    <header class="absolute top-0 inset-x-0 z-50 h-24 flex items-center">
+        <div class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 h-full items-center">
+            <nav class="flex justify-between items-center h-full">
+                <div class="flex min-w-max items-center">
+                    <a href="/" class="flex items-center gap-x-4 text-2xl font-semibold text-gray-700 dark:text-gray-300">
+                        <div class="flex items-center -space-x-3 font-semibold">
+                            <span class="h-6 aspect-square bg-emerald-600 dark:bg-emerald-400 rounded-full flex"></span>
+                            <span class="h-6 aspect-square bg-gray-600 dark:bg-white rounded-full flex"></span>
+                        </div>
+                        Agency
+                    </a>
+                </div>
+                <div data-navbar class="flex flex-col space-y-10 inset-0 fixed top-0 -translate-y-9 opacity-0 invisible lg:translate-y-0 h-[100dvh] bg-white dark:bg-gray-950 lg:!bg-transparent py-20 px-5 sm:px-10 md:px-14
+                    transition-all ease-linear duration-300 lg:flex-row lg:flex-1 lg:py-0 lg:px-0 lg:space-y-0 lg:gap-x-10 lg:visible lg:opacity-100 lg:relative lg:top-0 lg:h-full lg:items-center lg:justify-between lg:w-max">
+                    <ul class="flex flex-col gap-y-5 text-gray-700 dark:text-gray-300 lg:items-center lg:flex-row lg:gap-x-5 lg:h-full lg:justify-center lg:flex-1">
+                        <li>
+                            <a href="#" class="transition ease-linear hover:text-gray-900 dark:hover:text-white">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="transition ease-linear hover:text-gray-900 dark:hover:text-white">
+                                Products
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="transition ease-linear hover:text-gray-900 dark:hover:text-white">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="transition ease-linear hover:text-gray-900 dark:hover:text-white">
+                                Company
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="w-full flex sm:w-max lg:min-w-max lg:items-center">
+                        <a href="#" class="flex justify-center gap-x-3 items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white
+                            border-b bg-gray-700 dark:border-blue-300 hover:border-b-gray-900 dark:hover:border-b-white bg-transparent">
+                            Get in touch
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                    <path fill-rule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex items-center justify-end relative z-60 lg:hidden">
+                    <button data-toggle-navbar class="p-3 rounded-full bg-emerald-600 dark:bg-emerald-500 outline-none w-12 aspect-square flex flex-col relative justify-center items-center">
+                        <span class="sr-only">
+                            toggle navbar
+                        </span>
+                        <span id="line-1" class="w-6 h-0.5 rounded-full bg-gray-300 transition-transform duration-300 ease-linear"></span>
+                        <span id="line-2" class="w-6 origin-center  mt-1 h-0.5 rounded-full bg-gray-300 transition-all duration-300 ease-linear"></span>
+                        <span id="line-3" class="w-6 mt-1 h-0.5 rounded-full bg-gray-300 transition-all duration-300 ease-linear"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="bg-gray-100 dark:bg-gray-900 py-32 sm:py-36 lg:py-40 overflow-hidden h-[100dvh] min-h-max flex items-center relative">
+        <div class="absolute top-0 left-0 -translate-x-[54%] -translate-y-[70%] w-2/5 rounded-full aspect-square bg-emerald-600/70
+            backdrop-filter blur-3xl opacity-50"></div>
+        <div class="absolute bottom-0 right-0 translate-x-[54%] translate-y-[70%] w-2/5 rounded-full aspect-square bg-emerald-600/70
+            backdrop-filter blur-3xl opacity-50"></div>
+        <div class="absolute min-w-[300px] w-[48%] md:w-2/5 aspect-square rounded-full bg-gradient-to-r from-emerald-400/5 right-0
+            -translate-y-[40%] translate-x-[40%] top-0">
+            <div class="inset-[10%] rounded-full bg-gradient-to-l from-emerald-400/20">
+                <div class="absolute inset-[20%] rounded-full bg-gradient-to-l from-emerald-400/30"></div>
+            </div>
+        </div>
+        <div class="absolute min-w-[300px] w-[48%] md:w-2/5 aspect-square rounded-full bg-gradient-to-l from-emerald-400/5 left-0
+            translate-y-[40%] -translate-x-[40%] bottom-0">
+            <div class="inset-[10%] rounded-full bg-gradient-to-r from-emerald-400/40">
+                <div class="absolute inset-[20%] rounded-full bg-gradient-to-r from-emerald-400/50"></div>
+            </div>
+        </div>
+        <div class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5">
+            <div class="text-center flex flex-col items-center space-y-10">
+                <span class="border border-gray-500 px-3 py-0.5 rounded-full bg-darker bg-opacity-50 text-gray-700 dark:text-gray-300">
+                    Creativity in mind
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl/tight xl:text-7xl/tight text-gray-900 dark:text-white font-bold max-w-4xl capitalize">
+                    We inspire Growth for your business brand
+                </h1>
+                <p class="text-base text-gray-700 dark:text-gray-300 text-center max-w-xl">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique deleniti earum, qui odio,
+                    dolorum labore incidunt ad ab porro, provident excepturi molestiae corporis molestias nam accusamus.
+                </p>
+                <div class="flex justify-center">
+                    <a href="#" class="px-8 h-12 rounded-full flex items-center gap-x-3 bg-emerald-600 text-white hover:bg-opacity-80">
+                        Let's talk
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                <path fill-rule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clip-rule="evenodd" />
+                            </svg>                              
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/unify.js"></script>
+</body>
+
+</html>
