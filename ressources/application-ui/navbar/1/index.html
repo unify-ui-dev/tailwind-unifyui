@@ -6,7 +6,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar Example</title>
-    <meta name="description" content="Startup Website">
+    <meta name="description" content="Navbar example">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <style>
         body {
@@ -23,7 +23,7 @@
     </style>
 </head>
 
-<body class="overflow-hidden overflow-y-auto lg:overflow-y-auto bg-white dark:bg-gray950">
+<body class="bg-white dark:bg-gray-950 overflow-x-hidden overflow-y-auto lg:overflow-y-auto">
     <!-- navbar -->
     <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
     <header  class="sticky top-0 w-full flex items-center h-20 border-b border-b-gray-100 dark:border-b-gray-900 z-40 bg-white/80 dark:bg-gray-950/80 backdrop-filter backdrop-blur-xl">
@@ -90,7 +90,7 @@
         </nav>
     </header>
 
-    <script type="module" src="./../../../main.js"></script>
+    <script type="module" src="./../../../../main.js"></script>
     <script>
         const btnHumb = document.querySelector("[data-toggle-navbar]")
         const navbar = document.querySelector("[data-navbar]")
@@ -121,6 +121,7 @@
                 toggleBtnAttr()
             })
         }
+
     </script>
 </body>
 

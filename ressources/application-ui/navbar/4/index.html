@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery</title>
-    <meta name="description" content="Grocery Store Website">
+    <title>Navbar example</title>
+    <meta name="description" content="Navbar example">
     <link
-        href="https://fonts.googleapis.com/family=Poppins:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <style>
         body {
@@ -26,7 +26,8 @@
     </style>
 </head>
 
-<body class="overflow-hidden overflow-y-auto lg:overflow-y-auto bg-white dark:bg-gray-950">
+<body class="overflow-hidden overflow-y-auto lg:overflow-y-auto bg-orange-50 dark:bg-gray-950">
+
     <!-- navbar -->
     <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
     <header class="fixed left-0 bg-orange-50 dark:bg-gray-950 top-0 w-full flex items-center h-20 border-b border-b-gray-100 dark:border-b-gray-800 z-40">
@@ -95,7 +96,8 @@
         </nav>
     </header>
 
-    <script type="module" src="./../../../main.js"></script>
+  
+    <script type="module" src="./../../../../main.js"></script>
 
     <script>
         const btnHumb = document.querySelector("[data-toggle-navbar]")

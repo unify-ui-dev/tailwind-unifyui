@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
-    <meta name="description" content="Personnal Website herosection">
+    <title>Navbar example</title>
+    <meta name="description" content="Navbar example">
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -25,7 +25,8 @@
     </style>
 </head>
 
-<body class="overflow-hidden overflow-y-auto bg-white dark:bg-gray-950">
+<body class="overflow-hidden overflow-y-auto lg:overflow-y-auto bg-white dark:bg-gray-950">
+
     <!-- navbar -->
     <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
     <header class="sticky left-0 top-0 w-full flex items-center h-20 bg-white border-b border-b-gray-200 dark:bg-gray-950 dark:border-b-gray-800 z-40">
@@ -63,8 +64,8 @@
                 </ul>
             </div>
             <div class="flex items-center flex-1">
-                <a href="#" class="flex items-center gap-x-0.5">
-                    <span class="bg-gray-800 dark:bg-gray-900 text-white px-4 py-1.5 rounded-lg">R</span>
+                <a href="#" class="flex items-center gap-x-0.5 text-gray-800 dark:text-gray-200">
+                    <span class="bg-gray-700 dark:bg-gray-800 text-white px-4 py-1.5 rounded-lg">R</span>
                     <span aria-hidden="true" class="hidden sm:flex">doe</span>
                 </a>
             </div>
@@ -97,7 +98,7 @@
         </nav>
     </header>
 
-    <script type="module" src="./../../../main.js"></script>
+    <script type="module" src="./../../../../main.js"></script>
     <script>
         const btnHumb = document.querySelector("[data-toggle-navbar]")
         const navbar = document.querySelector("[data-navbar]")
