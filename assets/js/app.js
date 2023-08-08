@@ -1,6 +1,5 @@
 const useDarkMode = () => {
   const toggle_theme = document.querySelector("[data-toggle-dark]");
-
   window.addEventListener("load", () => {
     if (
       localStorage.getItem("useDarkTheme") === "true" ||

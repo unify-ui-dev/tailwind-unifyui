@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Section</title>
+    <meta name="description" content="Testimonial Section">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "DM Sans", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white dark:bg-gray-950">
+
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 space-y-16">
+            <div class="space-y-4 max-w-2xl">
+                <span class="rounded-lg bg-blue-100 dark:bg-gray-900 px-2.5 py-1 text-xs font-semibold tracking-wide text-blue-800 dark:text-gray-100">Testimonials</span>
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
+                    What they say about us
+                </h2>
+            </div>
+            <div
+                class="grid md:grid-cols-3 lg:grid-cols-2 md:gap-6 relative">
+                <div class="absolute -left-10 md:left-0 inset-y-0 w-3/5 z-0">
+                    <img
+                        src="/images/creative-agency-production.webp"
+                        alt="woman write"
+                        width="1800"
+                        height="1800"
+                        class="w-full h-full object-cover rounded-2xl"
+                    />
+                </div>
+                <div class="flex col-span-1"></div>
+                <div class="w-full col-span-1 overflow-hidden md:col-span-2 lg:col-span-1 relative flex flex-col gap-8 z-[5] py-10 md:py-14">
+                    <div class="h-auto  rounded-2xl shadow-lg shadow-gray-200/40 dark:shadow-none bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800">
+                        <div clas="h-full">
+                            <div class="flex gap-5 md:gap-6">
+                                <div class="flex min-w-max">
+                                    <img
+                                        src="/images/sidebiew.webp"
+                                        alt="Author Avatar"
+                                        width="500"
+                                        height="500"
+                                        class="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover rounded-2xl"
+                                    />
+                                </div>
+                                <div class="p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col gap-5">
+                                    <div class="flex flex-col">
+                                        <h4 class="text-xl md:text-2xl font-semibold text-gray-800 dark:text-white">
+                                            John Doe
+                                        </h4>
+                                        <span class="text-gray-600 dark:text-gray-400">
+                                            Ui Designer
+                                        </span>
+                                    </div>
+                                    
+                                    <div>
+                                        <p class="line-clamp-5 text-gray-700 dark:text-gray-300">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem non nemo vel corrupti ipsum corporis a, ea eligendi dolor accusantium dignissimos facilis suscipit magnam tenetur reprehenderit praesentium temporibus aspernatur. Rem!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex md:justify-end">
+                        <div class="flex items-center gap-4 w-max p-1.5 rounded-full bg-white dark:bg-gray-950 shadow-lg shadow-gray-200/30 border border-gray-200/40 dark:shadow-none dark:border-gray-800">
+                            <button aria-label="prev" class="outline-none text-gray-700 transition hover:text-blue-600 dark:text-gray-300 p-2 md:p-2.5 hover:bg-blue-100 dark:hover:bg-blue-100 dark:hover:text-blue-600 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                    <path fill-rule="evenodd" d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z" clip-rule="evenodd" />
+                                </svg>                                  
+                            </button>
+                            <div class="flex w-max min-w-max items-center">
+                                <div class="flex items-center gap-1 border-0 bg-transparent">
+                                    <span class="cursor-pointer w-4 h-2 rounded-full bg-blue-600 transition border-none"></span>
+                                    <span class="cursor-pointer w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-800 transition ease-linear border-none"></span>
+                                    <span class="cursor-pointer w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-800 transition ease-linear border-none"></span>
+                                </div>
+                            </div>
+                            <button aria-label="next" class="outline-none text-gray-700 transition hover:text-blue-600 dark:text-gray-300 p-2 md:p-2.5 hover:bg-blue-100 dark:hover:bg-blue-100 dark:hover:text-blue-600 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                    <path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd" />
+                                </svg>                                  
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="./../../../main.js"></script>
+</body>
+
+</html>
