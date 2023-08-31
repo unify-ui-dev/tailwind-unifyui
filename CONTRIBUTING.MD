@@ -24,7 +24,7 @@ Every contribution is welcome to this open source project. However, before submi
 2. Create a new branch out of the `main` branch. .
 
 3. Make and commit your changes following the
-   [commit convention](https://github.com/unify-ressources/unify-tailwindcss/blob/main/CONTRIBUTING.md#commit-convention).
+   [commit convention](https://github.com/unify-ressources/unify-tailwindcss/blob/main/CONTRIBUTING.MD#commit-convention).
    
 ## Local Development
 
