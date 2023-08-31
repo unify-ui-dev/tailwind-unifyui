@@ -26,7 +26,6 @@
 </head>
 
 <body class="overflow-hidden overflow-y-auto lg:overflow-y-auto bg-white dark:bg-gray-950">
-    <!-- navbar -->
     <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
     <header
         class="sticky top-0 w-full flex items-center h-20 border-b border-b-gray-100 dark:border-b-gray-900 z-40 bg-white/80 dark:bg-gray-950/80 backdrop-filter backdrop-blur-xl">
@@ -67,7 +66,7 @@
                             class="relative py-2.5 duration-300 ease-linear hover:text-blue-600 after:absolute after:w-full after:left-0 after:bottom-0 after:h-px after:rounded-md after:origin-left after:ease-linear after:duration-300 after:scale-x-0 hover:after:scale-100 after:bg-blue-600">Contact</a>
                     </li>
                 </ul>
-                <div aria-hidden="true"
+                <div
                     class="flex flex-col sm:flex-row sm:items-center gap-4  lg:min-w-max mt-10 lg:mt-0">
                     <a href="#"
                         class="px-6 py-3 duration-300 ease-linear flex justify-center w-full sm:w-auto border border-blue-600 text-blue-600 hover:text-white hover:bg-blue-700 dark:bg-gray-900 dark:text-white dark:border-gray-800 dark:hover:bg-gray-950 rounded-full">
@@ -75,10 +74,9 @@
                     </a>
                 </div>
             </div>
-            <div aria-hidden="true" class="flex items-center lg:hidden">
-                <button data-toggle-navbar data-is-open="false"
+            <div class="flex items-center lg:hidden">
+                <button data-toggle-navbar data-is-open="false" aria-label="toggle navbar"
                     class="outline-none border-l border-l-blue-100 dark:border-l-gray-800 pl-3 relative py-3">
-                    <span class="sr-only">Toggle navbar</span>
                     <div id="line-1" aria-hidden="true"
                         class="h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-300 transition duration-300">
                     </div>
@@ -89,15 +87,14 @@
         </nav>
     </header>
 
-    <!-- hero section -->
-    <section class="min-h-max bg-blue-50 dark:bg-gray-950">
+    <section class="lg-min-h-max bg-blue-50 dark:bg-gray-950">
         <div
             class="absolute left-0 top-20 w-40 aspect-video bg-gradient-to-br from-blue-600 to-sky-400 rounded-full blur-3xl opacity-60">
         </div>
-        <div class="min-max h-[calc(100dvh-5rem)] w-full flex items-center">
+        <div class="lg:h-[calc(100dvh-5rem)] min-h-max w-full flex items-center">
             <div
                 class="relative py-24 mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row lg:items-stretch gap-10">
-                <div class="lg:w-1/2  text-center lg:text-left max-w-2xl md:max-w-3xl mx-auto ">
+                <div class="lg:w-1/2  text-center lg:text-left max-w-2xl md:max-w-3xl mx-auto flex flex-col md-justify-center">
                     <h1
                         class="font-semibold text-teal-950 dark:text-white font-display text-4xl md:text-5xl lg:text-6xl">
                         Manage with better
@@ -131,19 +128,9 @@
                     </div>
                 </div>
                 <div class="lg:w-1/2 relative lg:h-auto max-w-2xl md:max-w-3xl mx-auto hidden md:flex justify-end">
-                    <div
-                        class="w-48 sm:w-52 aspect-[4/5] bg-white rounded-3xl border border-gray-200 absolute left-7 -top-10 z-10">
-
-                    </div>
-                    <div
-                        class="w-48 sm:w-52 aspect-video bg-white rounded-3xl border border-gray-200 absolute left-0 -bottom-10 z-10">
-
-                    </div>
                     <div class="relative w-full h-full flex items-center aspect-square overflow-hidden lg:aspect-auto">
-                        <span
-                            class="absolute inset-0 rounded-3xl  border-2 border-dashed border-blue-600 flex rotate-6"></span>
-                        <img src="/images/Overview.png" alt="sidebiew image"
-                            class="w-full relative h-auto rounded-3xl">
+                        <img src="/images/woman-at-meet-up.webp" width="1266" height="1224" alt="woman at virtual meetup"
+                            class="w-full relative h-auto">
                     </div>
                 </div>
             </div>

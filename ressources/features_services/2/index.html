@@ -18,7 +18,7 @@
 <body class="bg-white dark:bg-gray-950">
 
     <section class="py-20">
-        <div class="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 flex items-start gap-10 xl:gap-14">
+        <div class="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col md:flex-row gap-10 xl:gap-14">
             <div class="flex flex-1 flex-col gap-5">
                 <div class="flex flex-col gap-5">
                     <div class="flex flex-col">
@@ -111,9 +111,11 @@
                     </div>
                 </div>
             </div>
-            <img src="/images/chef.webp" width="500" alt="img cover about"
-                class="w-full md:h-full object-cover rounded-md hidden md:flex md:w-1/2 xl:w-[45%]">
-
+            <div
+                class="w-full md:h-auto object-cover flex md:items-end justify-center md:w-1/2 xl:w-[45%] relative">
+                <div class="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-tr from-gray-100 to-gray-300 dark:from-gray-900 dark:to-gray-700 rounded-3xl"></div>
+                <img src="/images/woman-with-gro.webp" width="1001" height="1001" alt="woman with grocery" class="wfull h-auto lg:w-[86%] relative">
+            </div>
         </div>
     </section>
     <script type="module" src="./../../../main.js"></script>
