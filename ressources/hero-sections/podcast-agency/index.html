@@ -30,7 +30,6 @@
 </head>
 
 <body class="overflow-hidden overflow-y-auto lg:overflow-y-auto bg-white dark:bg-gray-950">
-    <!-- navbar -->
     <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
     <header data-sticky-nav class="absolute inset-x-0 top-0 h-20 flex items-center z-50">
         <div class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 relative z-50"><!--[-->
@@ -111,7 +110,6 @@
         </div>
     </header>
 
-    <!-- hero section -->
     <section class="relative w-full">
         <div class="absolute top-0 inset-x-0 h-64 flex items-start">
             <div
@@ -131,9 +129,9 @@
                 class="grid lg:grid-cols-2 gap-10 xl:gap-14 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
                 <div class="lg:py-6">
                     <div class="text-center lg:text-left">
-                        <span class="px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-900 text-emerald-500">
+                        <span class="px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
                             New season available <a href="#"
-                                class="underline text-emerald-700 dark:text-emerald-400 font-semibold">here</a>
+                                class="underline text-emerald-700 dark:text-white font-semibold">here</a>
                         </span>
                         <h1 class="text-gray-800 pt-4 dark:text-white font-bold text-4xl md:text-5xl lg:text-6xl">
                             Find and listen <br> Favorite
@@ -216,7 +214,7 @@
         const btnHumb = document.querySelector("[data-toggle-navbar]")
         const navbar = document.querySelector("[data-navbar]")
         const overlay = document.querySelector("[data-nav-overlay]")
-        // !visible !opacity-100 !translate-y-0
+
         if (btnHumb && navbar) {
             const toggleBtnAttr = () => {
                 const isOpen = btnHumb.getAttribute("data-is-open")
