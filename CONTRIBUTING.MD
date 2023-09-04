@@ -2,7 +2,8 @@
 Every contribution is welcome to this open source project. However, before submitting your contribution, be sure to take a moment and read the following guidelines.
 
 
-- [Unify-UI (TailwindCSS) Contributing Guide](#unify-ui-tailwindcss-contributing-guide)
+- [Unify-UI (TailwindCSS) Co
+- ntributing Guide](#unify-ui-tailwindcss-contributing-guide)
   - [Commit Convention](#commit-convention)
   - [Pull Request Guidelines](#pull-request-guidelines)
     - [Steps to PR](#steps-to-pr)
