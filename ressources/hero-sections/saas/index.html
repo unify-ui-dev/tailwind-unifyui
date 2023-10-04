@@ -16,11 +16,11 @@
         }
 
         button[data-toggle-navbar][data-is-open="true"] #line-1 {
-            transform: rotate(45deg) translateY(0.375rem);
+            transform: rotate(45deg) translateY(0.33rem);
         }
 
         button[data-toggle-navbar][data-is-open="true"] #line-2 {
-            transform: rotate(-45deg) translateY(-0.375rem);
+            transform: rotate(-45deg) translateY(-0.33rem);
         }
     </style>
 </head>
@@ -66,8 +66,7 @@
                             class="relative py-2.5 duration-300 ease-linear hover:text-blue-600 after:absolute after:w-full after:left-0 after:bottom-0 after:h-px after:rounded-md after:origin-left after:ease-linear after:duration-300 after:scale-x-0 hover:after:scale-100 after:bg-blue-600">Contact</a>
                     </li>
                 </ul>
-                <div
-                    class="flex flex-col sm:flex-row sm:items-center gap-4  lg:min-w-max mt-10 lg:mt-0">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4  lg:min-w-max mt-10 lg:mt-0">
                     <a href="#"
                         class="px-6 py-3 duration-300 ease-linear flex justify-center w-full sm:w-auto border border-blue-600 text-blue-600 hover:text-white hover:bg-blue-700 dark:bg-gray-900 dark:text-white dark:border-gray-800 dark:hover:bg-gray-950 rounded-full">
                         Request trial
@@ -75,63 +74,61 @@
                 </div>
             </div>
             <div class="flex items-center lg:hidden">
-                <button data-toggle-navbar data-is-open="false" aria-label="toggle navbar"
-                    class="outline-none border-l border-l-blue-100 dark:border-l-gray-800 pl-3 relative py-3">
-                    <div id="line-1" aria-hidden="true"
-                        class="h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-300 transition duration-300">
-                    </div>
-                    <div id="line-2" aria-hidden="true"
-                        class="mt-2 h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-300 transition duration-300"></div>
+                <button aria-label="toggle navbar" data-toggle-navbar data-is-open="false"
+                    class="outline-none border-r border-r-gray-200 dark:border-r-gray-800 pr-3 relative py-3 children:flex">
+                    <span id="line-1" aria-hidden="true"
+                        class="h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-200 transition duration-300"></span>
+                    <span id="line-2" aria-hidden="true"
+                        class="mt-2 h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-200 transition duration-300"></span>
                 </button>
             </div>
         </nav>
     </header>
 
-    <section class="lg-min-h-max bg-blue-50 dark:bg-gray-950">
+    <section class="bg-blue-50 dark:bg-gray-950">
         <div
             class="absolute left-0 top-20 w-40 aspect-video bg-gradient-to-br from-blue-600 to-sky-400 rounded-full blur-3xl opacity-60">
         </div>
-        <div class="lg:h-[calc(100dvh-5rem)] min-h-max w-full flex items-center">
+        <div
+            class="relative mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 py-24 lg:py-4 flex flex-col lg:flex-row lg:items-center gap-10">
             <div
-                class="relative py-24 mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row lg:items-stretch gap-10">
-                <div class="lg:w-1/2  text-center lg:text-left max-w-2xl md:max-w-3xl mx-auto flex flex-col md-justify-center">
-                    <h1
-                        class="font-semibold text-teal-950 dark:text-white font-display text-4xl md:text-5xl lg:text-6xl">
-                        Manage with better
-                        <span
-                            class="bg-clip-text text-transparent bg-gradient-to-br from-teal-600 to-blue-600">experience</span>
-                        your Studio!
-                    </h1>
-                    <p class="mt-8 text-gray-700 dark:text-gray-300 mx-auto lg:mx-0 max-w-xl">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae omnis ipsa magnam neque
-                        ut
-                    </p>
-                    <div class="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4 lg:max-w-none max-w-md mx-auto">
-                        <a href="#"
-                            class="flex items-center justify-center py-3 px-6 border-2 border-transparent shadow-lg bg-blue-600 transition ease-linear hover:bg-blue-800 active:bg-blue-700 text-white rounded-full">
-                            Get Started
-                        </a>
+                class="lg:w-1/2  text-center lg:text-left max-w-2xl md:max-w-3xl mx-auto flex flex-col md-justify-center">
+                <h1 class="font-semibold text-teal-950 dark:text-white font-display text-4xl md:text-5xl lg:text-6xl">
+                    Manage with better
+                    <span
+                        class="bg-clip-text text-transparent bg-gradient-to-br from-teal-600 to-blue-600">experience</span>
+                    your Studio!
+                </h1>
+                <p class="mt-8 text-gray-700 dark:text-gray-300 mx-auto lg:mx-0 max-w-xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae omnis ipsa magnam neque
+                    ut
+                </p>
+                <div
+                    class="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4 lg:max-w-none max-w-md mx-auto lg:mx-0">
+                    <a href="#"
+                        class="flex items-center justify-center py-3 px-6 border-2 border-transparent shadow-lg bg-blue-600 transition ease-linear hover:bg-blue-800 active:bg-blue-700 text-white rounded-full">
+                        Get Started
+                    </a>
+                </div>
+                <div class="flex items-center gap-1 gap-x-2 mt-10 justify-center lg:justify-start py-5">
+                    <div class="flex items-center -space-x-2">
+                        <img src="/images/podCast.webp" width="2250" alt="listener avatar"
+                            class="w-10 h-10 object-cover rounded-full ring-4 ring-white dark:ring-gray-950">
+                        <img src="/images/podCast.webp" width="2250" alt="listener avatar"
+                            class="w-10 h-10 object-cover rounded-full ring-4 ring-white dark:ring-gray-950">
+                        <img src="/images/podCast.webp" width="2250" alt="listener avatar"
+                            class="w-10 h-10 object-cover rounded-full ring-4 ring-white dark:ring-gray-950">
                     </div>
-                    <div class="flex items-center gap-1 gap-x-2 mt-10 justify-center lg:justify-start py-5">
-                        <div class="flex items-center -space-x-2">
-                            <img src="/images/podCast.webp" width="2250" alt="listener avatar"
-                                class="w-10 h-10 object-cover rounded-full ring-4 ring-white dark:ring-gray-950">
-                            <img src="/images/podCast.webp" width="2250" alt="listener avatar"
-                                class="w-10 h-10 object-cover rounded-full ring-4 ring-white dark:ring-gray-950">
-                            <img src="/images/podCast.webp" width="2250" alt="listener avatar"
-                                class="w-10 h-10 object-cover rounded-full ring-4 ring-white dark:ring-gray-950">
-                        </div>
-                        <div class="flex flex-col justify-start items-start ">
-                            <span class="font-semibold text-lg text-gray-800 dark:text-gray-200">+12k</span>
-                            <span class="text-gray-600 dark:text-gray-300 text-sm">Lovely users</span>
-                        </div>
+                    <div class="flex flex-col justify-start items-start ">
+                        <span class="font-semibold text-lg text-gray-800 dark:text-gray-200">+12k</span>
+                        <span class="text-gray-600 dark:text-gray-300 text-sm">Lovely users</span>
                     </div>
                 </div>
-                <div class="lg:w-1/2 relative lg:h-auto max-w-2xl md:max-w-3xl mx-auto hidden md:flex justify-end">
-                    <div class="relative w-full h-full flex items-center aspect-square overflow-hidden lg:aspect-auto">
-                        <img src="/images/woman-at-meet-up.webp" width="1266" height="1224" alt="woman at virtual meetup"
-                            class="w-full relative h-auto">
-                    </div>
+            </div>
+            <div class="lg:w-1/2 relative lg:h-auto max-w-2xl md:max-w-3xl mx-auto hidden md:flex justify-end">
+                <div class="relative w-full h-full flex items-center aspect-square overflow-hidden lg:aspect-auto">
+                    <img src="/images/woman-at-meet-up.webp" width="1266" height="1224" alt="woman at virtual meetup"
+                        class="w-full relative h-auto">
                 </div>
             </div>
         </div>

@@ -14,11 +14,11 @@
         }
 
         button[data-toggle-navbar][data-is-open="true"] #line-1 {
-            transform: rotate(45deg) translateY(0.375rem);
+            transform: rotate(45deg) translateY(0.33rem);
         }
 
         button[data-toggle-navbar][data-is-open="true"] #line-2 {
-            transform: rotate(-45deg) translateY(-0.375rem);
+            transform: rotate(-45deg) translateY(-0.33rem);
         }
     </style>
 </head>
@@ -62,13 +62,9 @@
                 </div>
             </div>
             <div class="flex items-center lg:hidden">
-                <button data-toggle-navbar data-is-open="false" aria-label="toggle navbar"
-                    class="outline-none border-l border-l-blue-100 dark:border-l-gray-800 pl-3 relative py-3">
-                    <div id="line-1" aria-hidden="true"
-                        class="h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-300 transition duration-300">
-                    </div>
-                    <div id="line-2" aria-hidden="true"
-                        class="mt-2 h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-300 transition duration-300"></div>
+                <button data-toggle-navbar data-is-open="false" aria-label="Toggle navbar" class="outline-none border-l border-l-emerald-100 dark:border-l-gray-800 pl-3 relative py-3 children:flex">
+                    <span id="line-1" aria-hidden="true" class="h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-200 transition duration-300"></span>
+                    <span id="line-2" aria-hidden="true" class="mt-2 h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-200 transition duration-300"></span>
                 </button>
             </div>
         </nav>

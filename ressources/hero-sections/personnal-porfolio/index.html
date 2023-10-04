@@ -16,11 +16,11 @@
         }
 
         button[data-toggle-navbar][data-is-open="true"] #line-1 {
-            transform: rotate(45deg) translateY(0.375rem);
+            transform: rotate(45deg) translateY(0.33rem);
         }
 
         button[data-toggle-navbar][data-is-open="true"] #line-2 {
-            transform: rotate(-45deg) translateY(-0.375rem);
+            transform: rotate(-45deg) translateY(-0.33rem);
         }
     </style>
 </head>
@@ -29,11 +29,10 @@
     <div data-nav-overlay aria-hidden="true" class="fixed bg-gray-800/40 inset-0 z-30 hidden lg:hidden"></div>
     <header class="sticky left-0 top-0 w-full flex items-center h-20 bg-white border-b border-b-gray-200 dark:bg-gray-950 dark:border-b-gray-800 z-40">
         <nav class="relative mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex gap-x-5 justify-between items-center">
-            <div aria-hidden="true" class="w-full flex items-center lg:hidden">
-                <button data-toggle-navbar data-is-open="false" class="outline-none border-r border-r-gray-200 dark:border-r-gray-800 pr-3 relative py-3">
-                    <span class="sr-only">Toggle navbar</span>
-                    <div id="line-1" aria-hidden="true" class="h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-200 transition duration-300"></div>
-                    <div id="line-2" aria-hidden="true" class="mt-2 h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-200 transition duration-300"></div>
+            <div  class="w-full flex items-center lg:hidden">
+                <button aria-label="toggle navbar" data-toggle-navbar data-is-open="false" class="outline-none border-r border-r-gray-200 dark:border-r-gray-800 pr-3 relative py-3 children:flex">
+                    <span id="line-1" aria-hidden="true" class="h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-200 transition duration-300"></span>
+                    <span id="line-2" aria-hidden="true" class="mt-2 h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-200 transition duration-300"></span>
                 </button>
             </div>
             <div data-navbar class="absolute top-full left-0 bg-white  dark:bg-gray-950 dark:lg:bg-transparent lg:flex w-full invisible lg:visible lg:opacity-100 opacity-0 ease-linear duration-300
