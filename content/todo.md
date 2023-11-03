@@ -1,0 +1,3 @@
+- footer
+- metrics
+- pricing-section
