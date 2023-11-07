@@ -1,16 +1,16 @@
 <p align="center">
-<a href=https://github.com/unify-ui-dev/unocss-unifyui target="_blank">
-<img src='https://raw.githubusercontent.com/unify-ressources/.github/main/cover_.png' width="100%" alt="Banner" />
+<a href="https://github.com/unify-ui-dev/tailwind-unifyui" target="_blank">
+<img src='./cover_tailwindcss.png' width="100%" alt="Banner" />
 </a>
 </p>
 
 
 
 <p align="center">
-<img src="https://img.shields.io/github/contributors/unify-ui-dev/unocss-unifyui" alt="GitHub contributors" />
-<img src="https://img.shields.io/github/discussions/unify-ui-dev/unocss-unifyui" alt="GitHub discussions" />
-<img src="https://img.shields.io/github/issues/unify-ui-dev/unocss-unifyui" alt="GitHub issues" />
-<img src="https://img.shields.io/github/issues-pr/unify-ui-dev/unocss-unifyui" alt="GitHub pull request" />
+<img src="https://img.shields.io/github/contributors/unify-ui-dev/tailwind-unifyui" alt="GitHub contributors" />
+<img src="https://img.shields.io/github/discussions/unify-ui-dev/tailwind-unifyui" alt="GitHub discussions" />
+<img src="https://img.shields.io/github/issues/unify-ui-dev/tailwind-unifyui" alt="GitHub issues" />
+<img src="https://img.shields.io/github/issues-pr/unify-ui-dev/tailwind-unifyui" alt="GitHub pull request" />
 </p>
 
 <p></p>
@@ -84,8 +84,8 @@ npm run dev
 
 
 ## 🙌 Credit
-
-
+ - [Tailus UI](https://github.com/tailus-ui){taget="_blank"}
+ - [float ui](https://github.com/MarsX-dev/floatui){taget="_blank"}
 
 ## Contributing
 
@@ -94,9 +94,9 @@ If you're interested in contributing to Unify-UI, please read our [contributing 
 
 ## Request Component/Block
 
-Request <a href="https://sharuco.lndev.me/form/view/GEG1qbIZbD7U3jLF6Lj7" target="_blank">here</a>
+Request [here](https://docs.google.com/forms/d/e/1FAIpQLSf8eXUnw6kX3xWMjRIE3z0NpSVTPeULkQE9hsmFSVwig6WJmA/viewform){taget="_blank"}
 
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [**MIT License**](https://github.com/unify-ui-dev/unocss-unifyui/blob/main/LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [**MIT License**](LICENSE) file for details.
