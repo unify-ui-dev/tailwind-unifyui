@@ -84,8 +84,8 @@ npm run dev
 
 
 ## 🙌 Credit
- - [Tailus UI](https://github.com/tailus-ui){taget="_blank"}
- - [float ui](https://github.com/MarsX-dev/floatui){taget="_blank"}
+ - [Tailus UI](https://github.com/tailus-ui){:target="_blank"}
+ - [float ui](https://github.com/MarsX-dev/floatui){:target="_blank"}
 
 ## Contributing
 
@@ -94,7 +94,7 @@ If you're interested in contributing to Unify-UI, please read our [contributing 
 
 ## Request Component/Block
 
-Request [here](https://docs.google.com/forms/d/e/1FAIpQLSf8eXUnw6kX3xWMjRIE3z0NpSVTPeULkQE9hsmFSVwig6WJmA/viewform){taget="_blank"}
+Request [here](https://docs.google.com/forms/d/e/1FAIpQLSf8eXUnw6kX3xWMjRIE3z0NpSVTPeULkQE9hsmFSVwig6WJmA/viewform){:target="_blank"}
 
 
 ## 📄 License
