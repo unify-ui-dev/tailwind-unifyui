@@ -1,0 +1,90 @@
+---
+title: Free TailwindCSS blocks/Components
+description: Tailwind Blocks & Components for NuxtJs & VueJS
+---
+
+Welcome to UnifyUI! This guide is designed to help you seamlessly integrate UnifyUI blocks and components into your project. Whether you're a seasoned developer or just starting, follow these steps to get up and running with UnifyUI.
+
+## Installation
+Follow these steps to use UnifyUI blocks/components into your project.
+
+<Steps>
+
+### Install TailwindCSS
+
+Install tailwindcss via `npm`, and create your tailwind.config.js file.
+
+```bash
+npm install -D tailwindcss
+npx tailwindcss init
+```
+
+### Configure TailwindCSS
+
+Edit Tailwind Config file (`tailwind.config.ts` or `tailwind.config.js` or `tailwind.config.mjs`) to the root-level of your project.
+
+```js
+/** @type {import('tailwindcss').Config} */
+
+const plugin = require("tailwindcss/plugin");
+
+module.exports = {
+  content: [
+    // Add the paths to all of your template files
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  // darkMode
+  darkMode:"class",
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant("children", "&>*");
+    }),
+  ],
+}
+
+```
+
+### Add the Tailwind directives to your CSS
+
+Add the `@tailwind` directives for each of Tailwind’s layers to your main CSS file.
+
+```js
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+
+### Start the Tailwind CLI build process
+
+Run the CLI tool to scan your template files for classes and build your CSS.
+
+```bash
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+```
+
+</Steps>
+
+
+## Quick Starters
+
+### NextJS boilerplate
+
+NextJs + TailwindCSS Boilerplate
+
+To use [This boilerplate](https://github.com/unify-ui-dev/nextjs-tailwind-boilerplate.git), follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/unify-ui-dev/nextjs-tailwind-boilerplate.git
+   ```
+
+2. Install dependencies
+
+```sh
+npm install
+```
